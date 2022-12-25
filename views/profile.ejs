@@ -1,0 +1,90 @@
+<style>
+.txt {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+
+.txt2,
+.txt3 {
+  width: 45%;
+  background: #973ab9;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 80px 80px 0 80px;
+  font-size: 18px;
+  color: white;
+}
+
+.txt3 {
+
+  border-radius: 80px 80px 80px 0;
+}
+
+.team {
+  padding: 30px;
+  background: #d1d1d1;
+  font-size: 18px;
+}
+
+.team table {
+  margin: 0 auto;
+}
+
+.team h3 {
+  text-align: center;
+}
+
+.team th {
+  background: #b0b0b0;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.team td {
+  background: #b0b0b0;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+
+}
+</style>
+<div class = "txt">
+
+  <div class = "txt2">
+  <h2>Vision</h2>
+    <p>Duis auto irure dolor in reprehenderit in voluntary velit esse Cullum dolore eu eu fugiat nulla pariatur. Excepted sint occupation cupidatat non prouder, sunt in culpa qui official deserunt mollie anim ID est laborum</p>
+</div>
+   <div class = "txt3">
+  <h2>Mision</h2>
+  <p>Duis auto irure dolor in reprehenderit in voluntary velit esse Cullum dolore eu eu fugiat nulla pariatur. Excepted sint occupation cupidatat non prouder, sunt in culpa qui official deserunt mollie anim ID est laborum</p>
+   
+ </div>
+</div>
+<div class= "team">
+  <h3>Our Team</h3>
+   <div class = "kolom">
+    <table>
+        <tr>
+          <th>Nama</th> 
+          <th>Position</th>
+            <th>Skils</th>
+          <th>picture</th>
+           
+        </tr>
+        <% data.forEach(row => { %>
+         <tr>
+            <td><%= row.employeeName %> </td>
+            <td><%= row.position %> </td>
+            <td><%= row.skill %> </td>
+            <td><img src= "<%= row.imgPath %> " width= "100px"></td>
+         </tr>
+        <% }) %>
+    </table>
+  </div>
+</div>
+</div>

@@ -1,0 +1,99 @@
+<style>
+  .hello-img {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+
+.text {
+  z-index: 2;
+  width: 40%;
+  font-size: 18px;
+
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+}
+
+.image img {
+  width: 100%;
+}
+
+.style {
+  width: 200px;
+  height: 400px;
+  background: burlywood;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -50px;
+  border-radius: 0 50px 50px 0;
+  z-index: -1;
+}
+
+.container .kotak {
+  padding: 30px;
+  background: #c8b5ff;
+  font-size: 18px;
+}
+
+.kotak button {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 90ms all;
+  cursor: pointer;
+}
+
+.kotak button:hover {
+  transform: scale(0.9);
+}
+
+.text button {
+  background: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 90ms all;
+  cursor: pointer;
+}
+
+.text button:hover {
+  transform: scale(0.9);
+}
+
+</style>
+<div class="container">
+  <div class="hello-img">
+    <div class="text">
+
+      <h2>Hello, World!</h2>
+      <p>welcome to our website, if there is any help press the button below</p>
+      <button>Learn More</button>
+    </div>
+    <div class="image"><img src="background.png" alt=""></div>
+    <!-- <div class="style"></div> -->
+  </div>
+  <div class="kotak">
+    <p>Our company is engaged in software, here we accept web or application creation to help performance, making work
+      easier if you are interested or want to join, press the button below</p>
+
+    <button>Join Us</button>
+
+  </div>
+ 
+</div>

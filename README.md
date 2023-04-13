@@ -1,7 +1,7 @@
 # web-pbo
 
-Unduh node module dengan menjalankan
+Unduh node module pada terminal dengan menjalankan
 ```
 npm i nodemon
 ```
-Pada terminal
+
